@@ -1,0 +1,13 @@
+#!/usr/bin/env ruby
+
+require 'yaml'
+
+yml = {
+    'addons' => [],
+    'config_vars' => {},
+    'default_process_types' => {
+        'web' => 'chmod +x script_run.sh && ./script_run.sh'
+    }
+}.to_yaml
+
+puts yml

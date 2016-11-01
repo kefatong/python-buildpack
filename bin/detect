@@ -1,0 +1,11 @@
+#!/bin/sh
+
+BUILD_DIR=$1
+
+if [ -f $BUILD_DIR/*.py ];then
+    echo "Python"
+    exit 0
+fi
+
+echo "no"
+exit 1

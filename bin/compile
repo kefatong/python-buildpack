@@ -1,0 +1,18 @@
+#!/bin/sh
+
+
+BUILD_DIR=$1
+BUILD_CHCHE_DIR=$2
+
+echo $BUILD_DIR
+echo $BUILD_CHCHE_DIR
+
+
+
+if [ -f $BUILD_DIR/req.txt ];then
+    echo "pip install -r $BUILD_DIR/req.txt"
+    pip install -r $BUILD_DIR/req.txt
+    echo "11111111111"
+fi
+
+

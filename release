@@ -6,7 +6,7 @@ yml = {
     'addons' => [],
     'config_vars' => {},
     'default_process_types' => {
-        'web' => ''
+        'web' => 'chmod +x script_run.sh && ./script_run.sh'
     }
 }.to_yaml
 
